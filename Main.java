@@ -16,13 +16,11 @@ public class Main {
 				
 		String text = ImportText.getText();				
 		String[] sentences = TextParser.parseToSentence(text);			
-		String keyword = KeywordEnter.getKeyword();
-		
+		String keyword = KeywordEnter.getKeyword();		
 		
 		System.out.println(KeywordSearch.search(keyword));
 		
-		System.out.println(TextParser.removeSentence(sentences, keyword));		
-		
+		System.out.println(TextParser.removeSentence(sentences, keyword));				
 	}
 
 }
