@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class KeywordSearch {
 			
-			
+			/* @Ivan don't forget to remove public static void... */
 			public static void main(String[] args){
 			try {
 				String text = new String("Lorem Ipsum is simply dummy text of the printing and typesetting industry."
@@ -14,18 +14,18 @@ public class KeywordSearch {
 						+ " and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."); //entered text
 			
 			
+				/* text @Ivan you must to change it*/
+				String keyword = new String ("Lorem"); /* keyword to search in text @Ivan you must to change it*/
 				
-				String keyword = new String ("Lorem"); // keyword to search in text
-				
-				Boolean found = Arrays.asList(text.split(" ")).contains(keyword);
+				Boolean found = Arrays.asList(text.split(" ")).contains(keyword); /* @checks if sentence contains keywords result is true or false */
 				if(found){
-				      System.out.println("Keyword [" + keyword + "] has been found in the text");
+				      System.out.println("Keyword [" + keyword + "] has been found in the text"); /* @prints that keyword found */ 
 				      System.out.println("What Do you like to do with it?");
-				      System.out.println("Press 1 to show all senteces with [" + keyword + "]");
+				      System.out.println("Press 1 to show all senteces with [" + keyword + "]"); 
 				      System.out.println("Press 2 to delete all senteces with [" + keyword + "]");
 				      System.out.println("Press 3 to show all senteces without [" + keyword + "]");
 				} 	else {
-						System.out.println("Error 2. Keyword [" + keyword + "] is absent in the text");
+						System.out.println("Error 2. Keyword [" + keyword + "] is absent in the text"); /* @It shows when keyword wasn't found in text*/
 			 		}
 	
 			} 
